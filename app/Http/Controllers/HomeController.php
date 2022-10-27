@@ -85,7 +85,7 @@ class HomeController extends Controller
         $data["Titulo"] = $especialidad->nombre;
         $data["Autor"] = $instructor->nombre;
         $data["Completado"] = $completado . "/" . $total_capitulos . " COMPLETADO";
-        $data["Cursos"] = array_values($resultado_cursos);
+        $data["Cursos"] = array_values($resultado_cursos);//TODO agregando el arrays de resultado cursos
         $data["Informacion de autor"] = [
             "Titulo" => "sobre el instructor",
             "Foto" => $instructor->foto, 
