@@ -73,7 +73,7 @@ class HomeController extends Controller
                 "locked" => $locked
             ];
 
-            if ($value->is_done == 1) {
+            if ($value->is_done ==  1) {
                 $completado++;
             }
             $total_capitulos++;
